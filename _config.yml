@@ -83,7 +83,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "interesting"
   location         : "Shanghai China"
-  email            :
+  email            : "oytmfc@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -104,9 +104,7 @@ author:
   tumblr           :
   twitter          :
   vine             :
-  weibo            :
-  xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  weibo            : oytmfc
 
 
 # Reading Files
