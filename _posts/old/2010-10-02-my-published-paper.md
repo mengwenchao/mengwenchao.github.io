@@ -22,7 +22,7 @@ author:
 ---
 
 	@conference{wenchao2009modified,
-	  title={{A modified approach to keyword extraction based on word-similarity}},
+	  title={{ "{{A modified approach to keyword extraction based on word-similarity" }}}},
 	  author={Wenchao, M. and Lianchen, L.},
 	  booktitle={Intelligent Computing and Intelligent Systems, 2009. ICIS 2009. IEEE International Conference on},
 	  volume={3},
@@ -31,7 +31,7 @@ author:
 	  organization={IEEE}
 	}
 	@conference{wenchao2010comparative,
-	  title={{A comparative study on Chinese word segmentation using statistical models}},
+	  title={{ "{{A comparative study on Chinese word segmentation using statistical models" }}}},
 	  author={Wenchao, M. and Lianchen, L. and Anyan, C.},
 	  booktitle={Software Engineering and Service Sciences (ICSESS), 2010 IEEE International Conference on},
 	  pages={482--486},
