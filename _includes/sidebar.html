@@ -32,7 +32,7 @@
     </a>
     </span>
     {% endfor %}
-
+-->
     <h3>Archive</h3>
     {% assign counter = 0 %}
     {% for post in site.posts %}
@@ -40,11 +40,12 @@
         {% assign prevyear = post.previous.date | date: "%Y" %}
         {% assign counter = counter | plus: 1 %}
         {% if thisyear != prevyear %}
-        <li><a href="/{{ post.date | date:"%Y" }}">{{ thisyear }} ({{ counter }})</a></li>
+        <li>
+            <!-- <a href="/{{ post.date | date:"%Y" }}">{{ thisyear }} ({{ counter }})</a></li> -->
+            {{ thisyear }} ({{ counter }})
             {% assign counter = 0 %}
         {% endif %}
     {% endfor %}
--->
 <!-- added -->
 
   </div>
