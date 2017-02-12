@@ -19,5 +19,31 @@
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
   {% endif %}
+
+<!-- added -->
+    <h3>Tag Cloud</h3>
+    {% assign tags = site.tags | sort %}
+    {% for tag in tags %}
+    <span class="site-tag">
+    <a href="/tag/{{ tag | first | slugify }}/"
+        style="font-size: {{ tag | last | size  |  times: 3 | plus: 6  }}%">
+            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+    </a>
+    </span>
+    {% endfor %}
+
+    <h3>Archive</h3>
+    {% assign counter = 0 %}
+    {% for post in site.posts %}
+        {% assign thisyear = post.date | date: "%Y" %}
+        {% assign prevyear = post.previous.date | date: "%Y" %}
+        {% assign counter = counter | plus: 1 %}
+        {% if thisyear != prevyear %}
+        <li><a href="/{{ post.date | date:"%Y" }}">{{ thisyear }} ({{ counter }})</a></li>
+            {% assign counter = 0 %}
+        {% endif %}
+    {% endfor %}
+<!-- added -->
+
   </div>
 {% endif %}

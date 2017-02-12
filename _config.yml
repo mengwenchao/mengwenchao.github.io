@@ -186,6 +186,8 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-archives
+
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -214,16 +216,15 @@ tag_archive:
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
 jekyll-archives:
-   enabled:
-     - categories
-     - tags
-   layouts:
-     category: archive-taxonomy
-     tag: archive-taxonomy
-   permalinks:
-     category: /categories/:name/
-     tag: /tags/:name/
-
+  enabled: all
+  layouts:
+    year: year-archive
+    month: month-archive
+    tag: tag-archive-layout
+  permalinks:
+    year: /:year/
+    month: '/:year/:month/'
+    tag: '/tag/:name/'
 
 # HTML Compression
 # - http://jch.penibelst.de/
