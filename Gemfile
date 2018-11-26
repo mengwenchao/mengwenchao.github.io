@@ -12,4 +12,5 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem 'jekyll-archives'
   gem "jemoji"
+  gem 'jekyll-tagging'
 end

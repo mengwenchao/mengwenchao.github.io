@@ -211,7 +211,8 @@ category_archive:
   type: liquid
   path: /categories/
 tag_archive:
-  type: liquid
+  #type: liquid
+  type: jekyll-archives
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
 jekyll-archives:
@@ -231,6 +232,11 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+######tag
+tag_page_layout: tag_page
+tag_page_dir: tags
+tag_permalink_style: pretty
 
 
 # Defaults
