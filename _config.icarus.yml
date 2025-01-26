@@ -235,11 +235,11 @@ widgets:
         # Author's current location
         location: Shanghai
         # URL or path to the avatar image
-        avatar: http://localhost:4000/img/self_logo.jpg
+        avatar: /img/self_logo.jpg
         # Whether show the rounded avatar image
-        avatar_rounded: true
+        avatar_rounded: false
         # Email address for the Gravatar
-        gravatar:  oytmfc@gmail.com
+        #gravatar: /img/self_logo.jpg
         # URL or path for the follow button
         #follow_link: https://github.com/ppoffice
         # Links to be shown on the bottom of the profile widget
